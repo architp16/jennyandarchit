@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wedding Photos – Jenny &amp; Archit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header>
+        <div class="logo">Jenny &amp; Archit</div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="photos.html">Photos</a>
+        </nav>
+      </header>
+
+      <main class="photos-main">
+        <h1 class="section-title">Wedding Photos</h1>
+        <p class="section-subtitle">
+          A shared gallery for everyone who celebrated with us. Answer the
+          little question below to enter.
+        </p>
+
+        <!-- Password Gate -->
+        <div id="password-card" class="password-card">
+          <form id="photos-password-form">
+            <label for="photos-password-input">Which city is the wedding in?</label>
+            <input
+              type="password"
+              id="photos-password-input"
+              autocomplete="off"
+              placeholder="Type your answer"
+              required
+            />
+            <button type="submit">Unlock Gallery</button>
+            <p class="password-hint">Hint: Check the wedding invitation. 😉</p>
+            <div id="photos-password-error" class="password-error"></div>
+          </form>
+        </div>
+
+        <!-- Gallery (hidden until correct answer) -->
+        <section
+          id="photos-gallery"
+          class="gallery-section"
+          style="display: none;"
+        >
+          <div class="gallery-actions">
+            <a
+              id="google-photos-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="google-photos-button"
+            >
+              <div class="google-photos-logo">
+                <div class="gp-segment gp-segment-1"></div>
+                <div class="gp-segment gp-segment-2"></div>
+                <div class="gp-segment gp-segment-3"></div>
+                <div class="gp-segment gp-segment-4"></div>
+              </div>
+              <div class="google-photos-text">
+                <div class="google-photos-text-main">
+                  Open shared Google Photos album
+                </div>
+                <div class="google-photos-text-sub">
+                  Upload your pictures or download photos from the celebrations.
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <p class="gallery-embed-note">
+            The album will open in a new tab. You can add photos from any part
+            of the wedding week — travel, haldi, garba, the wedding, and all
+            the chaos in between.
+          </p>
+        </section>
+      </main>
+
+      <footer>Jenny &amp; Archit · 2026</footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
