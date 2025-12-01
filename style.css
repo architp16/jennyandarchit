@@ -496,3 +496,86 @@ footer {
     font-size: 0.78rem;
   }
 }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+  header {
+    padding-inline: 1.4rem;
+  }
+
+  nav a {
+    margin-left: 1rem;
+    font-size: 0.72rem;
+  }
+
+  .hero-inner {
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+    transform: scale(0.95);
+  }
+
+  .countdown-box {
+    min-width: 72px;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .countdown-value {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding-inline: 1rem;
+  }
+
+  .logo {
+    letter-spacing: 0.18em;
+  }
+
+  .hero-inner {
+    padding-inline: 1.2rem;
+    padding-block: 1.8rem;
+    transform: scale(0.9);
+  }
+
+  .hero-names {
+    font-size: 1.9rem;
+  }
+
+  .hero-date-location {
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+  }
+
+  .countdown-box {
+    min-width: 68px;
+    padding: 0.65rem 0.8rem;
+  }
+
+  .countdown-value {
+    font-size: 1.6rem;
+  }
+
+  .photos-main {
+    padding-inline: 1.3rem;
+  }
+}
+
+.hero-photos .hero-inner {
+  max-width: 720px;
+}
+
+.hero-photos .section-title {
+  margin-bottom: 0.6rem;
+}
+
+.hero-photos .section-subtitle {
+  margin-bottom: 1.8rem;
+}
+
+.hero-photos .gallery-section {
+  margin-top: 2rem;
+}
+
